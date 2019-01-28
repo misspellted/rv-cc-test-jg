@@ -6,7 +6,7 @@ website using Selenium.
 
 ## Requirements
 * Well, since this project runs tests against creditcards.com, an active Internet
-connection required.
+connection is extremely ultimately power-overwhelmingly highly suggested. Maybe.
 
 * This is a Java project, specifically written in and targeting the 1.8 version.
 So I'm pretty sure that's going to be needed for compilation. An installation
@@ -18,7 +18,7 @@ pre-defined property files for the configuration of a couple of different
 Selenium WebDriver's. A similarly constructed text file provided as an argument
 to the program will suffice.
 
-** Note: Any similarly constructed text file providing the properties MUST
+* * Note: Any similarly constructed text file providing the properties MUST
 provide the `webdriver` property, as that is used to check to see if a known
 factory can support the desired WebDriver.
 
