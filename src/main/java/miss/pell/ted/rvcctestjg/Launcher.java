@@ -1,6 +1,7 @@
 package miss.pell.ted.rvcctestjg;
 
 import miss.pell.ted.rvcctestjg.cases.AdvertiserDisclosureStatementsEqual;
+import miss.pell.ted.rvcctestjg.cases.CopyrightMessageIncludesCurrentYear;
 import miss.pell.ted.rvcctestjg.cases.NavigationBackgroundChangesWhenPageScrolled;
 import miss.pell.ted.rvcctestjg.drivers.FirefoxDriverFactory;
 import miss.pell.ted.rvcctestjg.drivers.HtmlUnitDriverFactory;
@@ -119,13 +120,14 @@ public class Launcher {
 
                     List<SeleniumTest> testPlan = new ArrayList<>(0);
 
-                    // Example adapted Selenium tests.
+                    // Adapted example Selenium tests.
 //                    testPlan.add(GoogleSearchTermInPageTitleAfterSubmission.searchFor("Cheese!"));
 //                    testPlan.add(GoogleSuggestReturnsSuggestionsAfterSubmission.suggestFor("Cheese"));
 
                     // Assessment Selenium tests.
                     testPlan.add(new NavigationBackgroundChangesWhenPageScrolled());
                     testPlan.add(new AdvertiserDisclosureStatementsEqual());
+                    testPlan.add(new CopyrightMessageIncludesCurrentYear());
 
                     for (SeleniumTest test : testPlan) {
                         runTest(test, webDriverFactory);
