@@ -1,11 +1,10 @@
 package miss.pell.ted.rvcctestjg;
 
+import miss.pell.ted.rvcctestjg.cases.NavigationBackgroundChangesWhenPageScrolled;
 import miss.pell.ted.rvcctestjg.drivers.FirefoxDriverFactory;
-import miss.pell.ted.rvcctestjg.examples.GoogleSearchTermInPageTitleAfterSubmission;
 import miss.pell.ted.rvcctestjg.drivers.HtmlUnitDriverFactory;
 import miss.pell.ted.rvcctestjg.drivers.HtmlUnitWithJsDriverFactory;
 import miss.pell.ted.rvcctestjg.drivers.WebDriverFactory;
-import miss.pell.ted.rvcctestjg.examples.GoogleSuggestReturnsSuggestionsAfterSubmission;
 import org.openqa.selenium.WebDriver;
 
 import java.io.FileInputStream;
@@ -119,8 +118,12 @@ public class Launcher {
 
                     List<SeleniumTest> testPlan = new ArrayList<>(0);
 
-                    testPlan.add(GoogleSearchTermInPageTitleAfterSubmission.searchFor("Cheese!"));
-                    testPlan.add(GoogleSuggestReturnsSuggestionsAfterSubmission.suggestFor("Cheese"));
+                    // Example adapted Selenium tests.
+//                    testPlan.add(GoogleSearchTermInPageTitleAfterSubmission.searchFor("Cheese!"));
+//                    testPlan.add(GoogleSuggestReturnsSuggestionsAfterSubmission.suggestFor("Cheese"));
+
+                    // Assessment Selenium tests.
+                    testPlan.add(new NavigationBackgroundChangesWhenPageScrolled());
 
                     for (SeleniumTest test : testPlan) {
                         runTest(test, webDriverFactory);
