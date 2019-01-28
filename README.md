@@ -2,9 +2,13 @@
 This repository contains an assessment of my skills at automating tests of a
 website using Selenium.
 
-# How to break everyth... How does it work?
+## How to break everyth... How does it work?
+
+That assumes it works. I cannot guarantee it works on every single system, since
+that would be quite the feat, both physically and financially.
 
 ## Requirements
+
 * Well, since this project runs tests against creditcards.com, an active Internet
 connection is extremely ultimately power-overwhelmingly highly suggested. Maybe.
 
@@ -18,14 +22,14 @@ pre-defined property files for the configuration of a couple of different
 Selenium WebDriver's. A similarly constructed text file provided as an argument
 to the program will suffice.
 
-* * Note: Any similarly constructed text file providing the properties MUST
+  - Note: Any similarly constructed text file providing the properties MUST
 provide the `webdriver` property, as that is used to check to see if a known
 factory can support the desired WebDriver.
 
 * Depending on the WebDriver desired to run the Selenium tests, you may need
-some external programs that I could not identify as being used as a dependency;
-for an example of this, see the `firefox.properties` file in the companion
-repository, specifically the `webdriver.gecko.driver` property.
+some external programs that I could not identify as being usable as a
+dependency; for an example of this, see the `firefox.properties` file in the
+companion repository, specifically the `webdriver.gecko.driver` property.
 
 ## Compilation
 
