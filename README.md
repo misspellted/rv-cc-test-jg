@@ -5,7 +5,9 @@ website using Selenium.
 ## How to break everyth... How does it work?
 
 That assumes it works. I cannot guarantee it works on every single system, since
-that would be quite the feat, both physically and financially.
+that would be quite the feat, both physically and financially. Of course, if you
+are so inclined, it wouldn't hurt to try to run it on your system, preferrably
+in a virtual machine.. just in case.
 
 ## Requirements
 
