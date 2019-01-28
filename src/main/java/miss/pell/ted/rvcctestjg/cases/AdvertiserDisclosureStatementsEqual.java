@@ -14,7 +14,7 @@ public class AdvertiserDisclosureStatementsEqual extends SeleniumTest {
     public void run() {
         webDriver().get("http://www.creditcards.com");
 
-        // First get the indication that the initial transparency is the situation.
+        // Find the label that guards the secret advertiser disclosure.
         WebElement label = webDriver().findElement(By.xpath("//section/div[2]/div/label"));
 
         // Click the label to activate the modal dialog.
