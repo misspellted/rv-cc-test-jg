@@ -1,6 +1,7 @@
 package miss.pell.ted.rvcctestjg;
 
 import miss.pell.ted.rvcctestjg.cases.AdvertiserDisclosureStatementsEqual;
+import miss.pell.ted.rvcctestjg.cases.ClickingSavingOnGasShowsGasSavingsCardOffers;
 import miss.pell.ted.rvcctestjg.cases.CopyrightMessageIncludesCurrentYear;
 import miss.pell.ted.rvcctestjg.cases.NavigationBackgroundChangesWhenPageScrolled;
 import miss.pell.ted.rvcctestjg.drivers.FirefoxDriverFactory;
@@ -128,6 +129,7 @@ public class Launcher {
                     testPlan.add(new NavigationBackgroundChangesWhenPageScrolled());
                     testPlan.add(new AdvertiserDisclosureStatementsEqual());
                     testPlan.add(new CopyrightMessageIncludesCurrentYear());
+                    testPlan.add(new ClickingSavingOnGasShowsGasSavingsCardOffers());
 
                     for (SeleniumTest test : testPlan) {
                         runTest(test, webDriverFactory);
